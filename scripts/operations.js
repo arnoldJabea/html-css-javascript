@@ -1,15 +1,15 @@
-// Lire le contenu de la balise h1
-const contentsOfH1tags = document.getElementsByTagName("h1");
+function calculer() {
+  console.log("Effectuer un calcul");
+  const firstNumberInput = document.getElementById("firstNumber");
+  const valueOfFirstNumberInput = firstNumberInput.value;
+  console.log(valueOfFirstNumberInput);
 
-// Afficher le contenu des balises H1
-console.log(contentsOfH1tags);
+  const secondNumberInput = document.getElementById("secondNumber");
+  const valueOfSecondNumberInput = secondNumberInput.value;
+  console.log(valueOfSecondNumberInput);
 
-// contenu de la première balise h1
-const firstH1 = contentsOfH1tags[0];
-console.log(firstH1.innerHTML);
+  const result = 1 * valueOfSecondNumberInput + 1 * valueOfFirstNumberInput;
+  console.log(result);
 
-// Libelle du boutton
-const button = document.getElementById("calculer");
-console.log(button);
-const buttonLabel = button.innerText;
-console.log(buttonLabel);
+  document.getElementById("result").innerHTML = result;
+}
