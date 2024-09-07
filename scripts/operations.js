@@ -17,5 +17,5 @@ console.log(OTHER_PI);
 const IS_TRAINER = true;
 console.log(typeof IS_TRAINER, IS_TRAINER);
 
-let numbers = [10,3,4,45];
+let numbers = [10, 3, 4, 45];
 console.log(typeof numbers, numbers);
